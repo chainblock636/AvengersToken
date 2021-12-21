@@ -49,15 +49,6 @@ const header = () => {
                     <div class="right-content">
                       <ul class="right-list">
                         <li>
-                          <div class="language-selector">
-                            <select name="language" class="language">
-                              <option value="1">EN</option>
-                              <option value="2">IN</option>
-                              <option value="3">BN</option>
-                            </select>
-                          </div>
-                        </li>
-                        <li>
                           <div
                             class="notofication"
                             data-toggle="modal"
@@ -82,8 +73,7 @@ const header = () => {
               </div>
             </div>
           </section>
-          {/* <!-- Top Header Area End -->
-		<!--Main-Menu Area Start--> */}
+          
           <div class="mainmenu-area">
             <div class="container">
               <div class="row">
@@ -128,98 +118,7 @@ const header = () => {
                             Tournaments
                           </a>
                         </li>
-                        {/* <li class="nav-item dropdown">
-                          <a
-                            class="nav-link dropdown-toggle"
-                            href="#"
-                            role="button"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            Pages
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li>
-                              <a class="dropdown-item" href="about.html">
-                                {" "}
-                                <i class="fa fa-angle-double-right"></i>About
-                              </a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="bonuse-page.html">
-                                {" "}
-                                <i class="fa fa-angle-double-right"></i>Bonuse
-                              </a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="ticket-page.html">
-                                {" "}
-                                <i class="fa fa-angle-double-right"></i>Ticket
-                                Page
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="raffles-details.html"
-                              >
-                                {" "}
-                                <i class="fa fa-angle-double-right"></i>Raffles
-                                Details
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="games_details.html"
-                              >
-                                {" "}
-                                <i class="fa fa-angle-double-right"></i>Games
-                                Details
-                              </a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="tournaments2.html">
-                                {" "}
-                                <i class="fa fa-angle-double-right"></i>
-                                Tournaments Details
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="gamer-profile1.html"
-                              >
-                                {" "}
-                                <i class="fa fa-angle-double-right"></i>Gamer
-                                Profile Public
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="gamer-profile6.html"
-                              >
-                                {" "}
-                                <i class="fa fa-angle-double-right"></i>Gamer
-                                Problie Private{" "}
-                              </a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="help1.html">
-                                {" "}
-                                <i class="fa fa-angle-double-right"></i>Help
-                              </a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="404.html">
-                                {" "}
-                                <i class="fa fa-angle-double-right"></i>404
-                              </a>
-                            </li>
-                          </ul>
-                        </li> */}
+
                         <li class="nav-item">
                           <a class="nav-link" href="contact.html">
                             Contact
@@ -241,7 +140,6 @@ const header = () => {
               </div>
             </div>
           </div>
-          {/* <!--Main-Menu Area Start--> */}
         </header>
       </div>
     );
