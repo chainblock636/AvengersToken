@@ -35,7 +35,7 @@ const BuyPresale = () => {
                                                         <div class="header-area">
                                                             <h4>Withdraw BITCOIN</h4>
                                                             <p>
-                                                                You may switch to other currencies in the top right corner.
+                                                                Min Presale Investment 0.02BNB - Max Presale Investment 0.4BNB
                                                             </p>
                                                         </div>
                                                         <div class="form-area">
@@ -44,11 +44,11 @@ const BuyPresale = () => {
                                                                     <form action="#">
                                                                         <div class="form-group">
                                                                             <label for="">Amount</label>
-                                                                            {/* <input type="text" class="input-field" placeholder="Amount"> */}
+                                                                            <input type="text" class="input-field" placeholder="Amount"/>
                                                                         </div>
                                                                         <div class="form-group">
                                                                             <label for="">Payment Address</label>
-                                                                            {/* <input type="text" class="input-field" placeholder="Payment Address"> */}
+                                                                            <input type="text" class="input-field" placeholder="Payment Address"/>
                                                                         </div>
                                                                         <button type="submit" class="mybtn2">Submit</button>
                                                                     </form>
