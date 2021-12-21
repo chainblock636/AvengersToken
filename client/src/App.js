@@ -1,24 +1,14 @@
 import React from 'react'
-import CounterArea from './components/CounterArea'
 import Footer from './components/Footer'
-import GamePlay from './components/GamePlay'
 import Header from './components/Header'
-import HeroArea from './components/HeroArea'
-import HowToPlay from './components/HowToPlay'
-import JoinUs from './components/JoinUs'
-import LatestArchieve from './components/LatestArchieve'
-import Modals from './components/Modals'
+import Modals from './components/Main/Modals'
+import Home from './Home'
 
-function App() {
+const App = () => {
   return (
     <div>
       <Header />
-      <HeroArea />
-      <CounterArea />
-      <GamePlay />
-      <LatestArchieve />
-      <JoinUs />
-      <HowToPlay />
+      <Home />
       <Footer />
       <Modals />
     </div>
