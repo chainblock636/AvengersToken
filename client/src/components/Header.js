@@ -99,12 +99,17 @@ const header = () => {
                     >
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                          <a class="nav-link" href="raffles.html">
+                          <a class="nav-link" href="#">
                             Home
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="raffles.html">
+                          <a class="nav-link" href="#">
+                            App
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">
                             Raffles
                           </a>
                         </li>
