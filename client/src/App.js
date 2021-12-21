@@ -1,4 +1,5 @@
 import React from 'react'
+import BuyPresale from './components/BuyPresale'
 import CounterArea from './components/CounterArea'
 import Footer from './components/Footer'
 import GamePlay from './components/GamePlay'
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <HeroArea />
       <CounterArea />
+      <BuyPresale />
       <GamePlay />
       <LatestArchieve />
       <JoinUs />
