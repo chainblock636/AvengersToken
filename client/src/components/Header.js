@@ -114,8 +114,8 @@ const header = () => {
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">
-                            Raffles
+                          <a class="nav-link" href="#About">
+                            About
                           </a>
                         </li>
                         <li class="nav-item">

@@ -8,12 +8,14 @@ import HowToPlay from './components/Main/HowToPlay'
 import JoinUs from './components/Main/JoinUs'
 import LatestArchieve from './components/Main/LatestArchieve'
 import Modals from './components/Main/Modals'
+import About from './components/Main/About'
 
 function Home() {
   return (
     <div>
       <HeroArea />
       <CounterArea />
+      <About />
       <GamePlay />
       <LatestArchieve />
       <JoinUs />
