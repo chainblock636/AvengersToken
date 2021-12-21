@@ -49,15 +49,6 @@ const header = () => {
                     <div class="right-content">
                       <ul class="right-list">
                         <li>
-                          <div class="language-selector">
-                            <select name="language" class="language">
-                              <option value="1">EN</option>
-                              <option value="2">IN</option>
-                              <option value="3">BN</option>
-                            </select>
-                          </div>
-                        </li>
-                        <li>
                           <div
                             class="notofication"
                             data-toggle="modal"
