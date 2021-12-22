@@ -108,7 +108,7 @@ const header = () => {
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">
-                          <NavLink to="/GameProfile">
+                          <NavLink to="/staking">
                             DAO/Staking
                             </NavLink>
                           </a>

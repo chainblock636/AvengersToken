@@ -15,7 +15,7 @@ const App = () => {
           alert('Current network "undefined", Use ethereum enabled browser.');
       }
   }, []);
-  
+
   return (
     <div>
       <Router>
@@ -23,7 +23,7 @@ const App = () => {
         <Preloader />
         <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/GameProfile" element={<GameProfile />} />
+        <Route exact path="/staking" element={<GameProfile />} />
         </Routes>
         <Footer />
         <Modals />
