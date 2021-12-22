@@ -109,7 +109,7 @@ const header = () => {
                         <li class="nav-item">
                           <a class="nav-link" href="#">
                           <NavLink to="/GameProfile">
-                            App
+                            DAO
                             </NavLink>
                           </a>
                         </li>
@@ -125,13 +125,13 @@ const header = () => {
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="tournaments.html">
-                            Tournaments
+                            Tokenomics
                           </a>
                         </li>
 
                         <li class="nav-item">
                           <a class="nav-link" href="contact.html">
-                            Contact
+                          Community
                           </a>
                         </li>
                       </ul>
@@ -142,7 +142,7 @@ const header = () => {
                         data-target="#signin"
                       >
                         {" "}
-                        Join us
+                        Connect Wallet
                       </a>
                     </div>
                   </nav>
