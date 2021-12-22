@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react";
 
-const BuyPresale = () => {
+const BuyPresale = () => {  
+    React.useEffect(() => {
+        if (window.ethereum) {
+            console.log(window.ethereum);
+        } else {
+            alert('Current network "undefined", Use ethereum enabled browser.');
+        }
+    }, []);
+    
     return (
         <div>
             <section class="ex-lottery">
@@ -12,7 +20,7 @@ const BuyPresale = () => {
                                     <div class="wallet-tab-menu">
                                         <ul class="nav" id="pills-tab" role="tablist">
                                             <li class="nav-item" role="presentation">
-                                            <a class="nav-link active">Buy Presale</a>
+                                                <a class="nav-link active">Buy Presale</a>
                                             </li>
                                         </ul>
                                     </div>
