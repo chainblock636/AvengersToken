@@ -8,6 +8,14 @@ import GameProfile from './GameProfile';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
+  React.useEffect(() => {
+      if (window.ethereum) {
+          console.log(window.ethereum);
+      } else {
+          alert('Current network "undefined", Use ethereum enabled browser.');
+      }
+  }, []);
+  
   return (
     <div>
       <Router>

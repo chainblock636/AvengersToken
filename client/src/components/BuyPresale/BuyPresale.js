@@ -1,14 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 const BuyPresale = () => {  
-    React.useEffect(() => {
-        if (window.ethereum) {
-            console.log(window.ethereum);
-        } else {
-            alert('Current network "undefined", Use ethereum enabled browser.');
-        }
-    }, []);
-    
     return (
         <div>
             <section class="ex-lottery">
