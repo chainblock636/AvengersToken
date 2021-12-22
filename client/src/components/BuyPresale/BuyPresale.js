@@ -16,7 +16,7 @@ const BuyPresale = () => {
                                                     <img src="assets/images/arcive/i1.png" alt="" />
                                                     <div class="section-heading">
                                                         <h2 class="title ">
-                                                        Buy Presale Investment
+                                                        Early Investors
                                                         </h2>
                                                     </div>
                                                 </div>
@@ -40,7 +40,7 @@ const BuyPresale = () => {
                                                 <div class="col-lg-8">
                                                     <div class="dipo_btc">
                                                         <div class="header-area">
-                                                            <h4>Withdraw BITCOIN</h4>
+                                                            <h4>1,800,000,000 AVET = 1 BNB</h4>
                                                             <p>
                                                                 Min Presale Investment 0.02BNB - Max Presale Investment 0.4BNB
                                                             </p>
@@ -60,7 +60,21 @@ const BuyPresale = () => {
                                                             </div>
                                                         </div>
                                                         <div class="notice-area">
-                                                            <p><span>Transaction fee:</span> Your withdrawal will also have 0.0006 BTC  subtracted to cover the transaction fee.</p>
+                                                            {/* <div style={{overflowX: "auto"}}>
+                                                                <table>
+                                                                    <tr>
+                                                                        <th style={{width: "75%"}}>
+                                                            <p><span>Presale Price:</span>1,650,000,000 AVET = 1 BNB </p>
+                                                                        </th>
+                                                                        <th>
+                                                            <p><span>31st of Dec, 2021</span></p>
+                                                                        </th>
+                                                                    </tr>
+                                                                </table>
+                                                            </div> */}
+                                                            <p><span>Presale Price:</span>1,650,000,000 AVET = 1 BNB <span>31st of Dec, 2021</span></p>
+                                                            <p><span>Public Sale:</span>1,500,000,000 AVET = 1 BNB <span>11th of Feb, 2022</span></p>
+                                                            <p><span>Listing Price:</span>1,200,000,000 AVET = 1 BNB <span>13th of Feb, 2022</span></p>
                                                         </div>
                                                     </div>
                                                 </div>
