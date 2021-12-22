@@ -53,11 +53,7 @@ const BuyPresale = () => {
                                                                             <label for="">Amount</label>
                                                                             <input type="text" class="input-field" placeholder="Amount"/>
                                                                         </div>
-                                                                        <div class="form-group">
-                                                                            <label for="">Payment Address</label>
-                                                                            <input type="text" class="input-field" placeholder="Payment Address"/>
-                                                                        </div>
-                                                                        <button type="submit" class="mybtn2">Submit</button>
+                                                                        <button type="submit" class="mybtn2">Buy</button>
                                                                     </form>
         
                                                                 </div>

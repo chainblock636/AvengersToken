@@ -109,7 +109,7 @@ const header = () => {
                         <li class="nav-item">
                           <a class="nav-link" href="#">
                           <NavLink to="/GameProfile">
-                            DAO
+                            DAO/Staking
                             </NavLink>
                           </a>
                         </li>
@@ -120,7 +120,7 @@ const header = () => {
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="games.html">
-                            Games
+                            Road Map
                           </a>
                         </li>
                         <li class="nav-item">
@@ -142,7 +142,7 @@ const header = () => {
                         data-target="#signin"
                       >
                         {" "}
-                        Connect Wallet
+                         Wallet
                       </a>
                     </div>
                   </nav>
