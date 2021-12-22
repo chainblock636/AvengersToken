@@ -20,7 +20,14 @@ const BuyPresale = () => {
                                     <div class="wallet-tab-menu">
                                         <ul class="nav" id="pills-tab" role="tablist">
                                             <li class="nav-item" role="presentation">
-                                                <a class="nav-link active">Buy Presale</a>
+                                                <div class="sh-wrpper">
+                                                    <img src="assets/images/arcive/i1.png" alt="" />
+                                                    <div class="section-heading">
+                                                        <h2 class="title ">
+                                                        Buy Presale Investment
+                                                        </h2>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
