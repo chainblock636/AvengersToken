@@ -9,6 +9,7 @@ import LatestArchieve from './components/Main/LatestArchieve'
 import About from './components/Main/About'
 import RoadMap from './components/Main/RoadMap'
 import Recent from './components/Main/Recent'
+import Contact from './components/Main/Contact'
 
 function Home() {
   return (
@@ -23,6 +24,7 @@ function Home() {
       {/* <GamePlay /> */}
       {/* <JoinUs /> */}
       <HowToPlay />
+      <Contact />
     </div>
   )
 }

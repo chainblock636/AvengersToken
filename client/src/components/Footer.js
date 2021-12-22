@@ -8,6 +8,9 @@ const Footer = () => {
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
+							<div class="flogo">
+								<a href="#"><img src="assets/images/footer-logo.png" alt="" /></a>
+							</div>
 							<div class="social-links">
 								<ul>
 									{/* <li>
@@ -25,24 +28,21 @@ const Footer = () => {
 											<i class="fab fa-telegram"></i>
 										</a>
 									</li>
-									{/* <li>
+									<li>
 										<a href="#">
-											<i class="fab fa-linkedin-in"></i>
+											<i class="fab fa-discord"></i>
 										</a>
 									</li>
-									<li>
+									{/* <li>
 										<a href="#">
 											<i class="fab fa-instagram"></i>
 										</a>
 									</li> */}
 								</ul>
 							</div>
-							<div class="flogo" style={{marginTop: "20px"}}>
-								<a href="#"><img src="assets/images/footer-logo.png" alt="" /></a>
-							</div>
-							{/* <div class="footer-menu">
+							<div class="footer-menu">
 								<ul>
-									<li>
+									{/* <li>
 										<a href="#">
 											About
 										</a>
@@ -56,9 +56,9 @@ const Footer = () => {
 										<a href="#">
 											Disclamer
 										</a>
-									</li>
+									</li> */}
 								</ul>
-							</div> */}
+							</div>
 						</div>
 					</div>
 				</div>
