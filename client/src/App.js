@@ -1,28 +1,26 @@
-import React from 'react'
-import BuyPresale from './components/BuyPresale'
-import CounterArea from './components/CounterArea'
-import Footer from './components/Footer'
-import GamePlay from './components/GamePlay'
-import Header from './components/Header'
-import HeroArea from './components/HeroArea'
-import HowToPlay from './components/HowToPlay'
-import JoinUs from './components/JoinUs'
-import LatestArchieve from './components/LatestArchieve'
-import Modals from './components/Modals'
+import React from 'react';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Modals from './components/Main/Modals';
+import Preloader from './components/Preloader';
+import Home from './Home';
+import GameProfile from './GameProfile';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <div>
-      <Header />
-      <HeroArea />
-      <CounterArea />
-      <BuyPresale />
-      <GamePlay />
-      <LatestArchieve />
-      <JoinUs />
-      <HowToPlay />
-      <Footer />
-      <Modals />
+      <Router>
+        <Header />
+        <Preloader />
+        <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/GameProfile" element={<GameProfile />} />
+        </Routes>
+        <Footer />
+        <Modals />
+      </Router>
+      
     </div>
   )
 }
