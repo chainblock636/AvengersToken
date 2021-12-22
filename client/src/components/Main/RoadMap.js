@@ -7,15 +7,9 @@ const RoadMap = () => {
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-heading">
-                            <h5 class="subtitle">
-                                Exclusive Lottery
-                            </h5>
-                            <h2 class="title ">
-                                Raffles Ending Soon
-                            </h2>
-                            <h6 class="text">
-                                Now's your chance to win a exclusive product!
-                            </h6>
+                            <h1 style={{fontSize: "60px"}} class="subtitle">
+                                Avengers Token, Assemble
+                            </h1>
                         </div>
                     </div>
                 </div>
