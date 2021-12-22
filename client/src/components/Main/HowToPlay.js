@@ -67,7 +67,7 @@ const HowToPlay = () => {
 										<div class="col-lg-6 col-12">
 											
 											<form  class="form-area">
-													<input type="text" placeholder="Contract address" />
+													<input type="text" placeholder="Coming soon" />
 													<button class="mybtn1" type="submit"><i class="fas fa-file"></i> Copy
 													</button>
 											</form>
