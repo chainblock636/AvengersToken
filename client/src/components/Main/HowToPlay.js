@@ -49,7 +49,7 @@ const HowToPlay = () => {
 				</div>
 			</div>
 		</div>
-		<div class="subscribe-area">
+		<div class="subscribe-area" id="community">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
