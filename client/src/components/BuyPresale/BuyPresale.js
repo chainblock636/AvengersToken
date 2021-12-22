@@ -75,6 +75,7 @@ const BuyPresale = () => {
                                                             <p><span>Presale Price:</span>1,650,000,000 AVET = 1 BNB <span>31st of Dec, 2021</span></p>
                                                             <p><span>Public Sale:</span>1,500,000,000 AVET = 1 BNB <span>11th of Feb, 2022</span></p>
                                                             <p><span>Listing Price:</span>1,200,000,000 AVET = 1 BNB <span>13th of Feb, 2022</span></p>
+                                                            {/* Fair-launched by BabyCake Core Team */}
                                                         </div>
                                                     </div>
                                                 </div>

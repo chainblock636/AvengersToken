@@ -17,11 +17,11 @@ function Home() {
       <CounterArea />
       <About />
       <BuyPresale/>
-      <RoadMap />
-      <Recent />
-      <LatestArchieve />
-      <GamePlay />
-      <JoinUs />
+      {/* <RoadMap />
+      <Recent /> */}
+      {/* <LatestArchieve /> */}
+      {/* <GamePlay /> */}
+      {/* <JoinUs /> */}
       <HowToPlay />
     </div>
   )

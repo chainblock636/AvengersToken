@@ -19,7 +19,7 @@ const RoadMap = () => {
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="ex-lottery-slider">
-                            <div class="slider-item">
+                            {/* <div class="slider-item">
                                 <div class="single-tikit">
                                     <div class="image">
                                         <span class="tag">Ending Soon</span>
@@ -126,7 +126,7 @@ const RoadMap = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

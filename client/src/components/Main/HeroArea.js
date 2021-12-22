@@ -16,7 +16,9 @@ const HeroArea = () => {
 								are here
 							</h5>
 							<h1 class="title">
-								<img src="assets/images/text.png" alt="" />
+								<br/>
+								<br/>
+								{/* <img src="assets/images/text.png" alt="" /> */}
 							</h1>
 							<div class="links">
 								<a href="#buypresale" class="mybtn1">Buy Presale </a>

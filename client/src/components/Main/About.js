@@ -13,7 +13,7 @@ const About = () => {
 					<div class="left-content">
 						<div class="section-heading">
 							<h5 class="subtitle">
-								WELCOME TO The  Jugaro
+								What is $AVET
 							</h5>
 							<h2 class="title ">
 								Compete in your
@@ -23,28 +23,6 @@ const About = () => {
 							<h6 class="text">
 								We develop premium quality games and provide the best entertainment  to our players. We’ve also got a wide range of global partners which includes  some of the industry’s most influential operators. Our commitment to  working with top partners and producing highly entertaining and quality  games is part of why we have achieved our success.
 							</h6>
-						</div>
-						<div class="content-list">
-							<div class="s-list">
-								<img src="assets/images/about/i1.png" alt=""/>
-								<div class="content">
-									<p>
-										Verified by
-										<br />
-										VIP players
-									</p>
-								</div>
-							</div>
-							<div class="s-list">
-								<img src="assets/images/about/i2.png" alt=""/>
-								<div class="content">
-									<p>
-										Instant deposits
-										<br />
-										& withdrawals!
-									</p>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>

@@ -12,19 +12,19 @@ const header = () => {
                 <div class="col-lg-12">
                   <div class="content">
                     <div class="left-content">
-                      <ul class="left-list">
+                      {/* <ul class="left-list">
                         <li>
                           <p>
                             <i class="fas fa-headset"></i> Support
                           </p>
                         </li>
-                      </ul>
+                      </ul> */}
                       <ul class="top-social-links">
-                        <li>
+                        {/* <li>
                           <a href="#">
                             <i class="fab fa-facebook-f"></i>
                           </a>
-                        </li>
+                        </li> */}
                         <li>
                           <a href="#">
                             <i class="fab fa-twitter"></i>
@@ -32,10 +32,10 @@ const header = () => {
                         </li>
                         <li>
                           <a href="#">
-                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fab fa-telegram"></i>
                           </a>
                         </li>
-                        <li>
+                        {/* <li>
                           <a href="#">
                             <i class="fab fa-linkedin-in"></i>
                           </a>
@@ -44,10 +44,10 @@ const header = () => {
                           <a href="#">
                             <i class="fab fa-instagram"></i>
                           </a>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
-                    <div class="right-content">
+                    {/* <div class="right-content">
                       <ul class="right-list">
                         <li>
                           <div
@@ -68,7 +68,7 @@ const header = () => {
                           </div>
                         </li>
                       </ul>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

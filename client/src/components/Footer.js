@@ -8,16 +8,13 @@ const Footer = () => {
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
-							<div class="flogo">
-								<a href="#"><img src="assets/images/footer-ogo.png" alt="" /></a>
-							</div>
 							<div class="social-links">
 								<ul>
-									<li>
+									{/* <li>
 										<a href="#">
 											<i class="fab fa-facebook-f"></i>
 										</a>
-									</li>
+									</li> */}
 									<li>
 										<a href="#">
 											<i class="fab fa-twitter"></i>
@@ -25,10 +22,10 @@ const Footer = () => {
 									</li>
 									<li>
 										<a href="#">
-											<i class="fab fa-pinterest-p"></i>
+											<i class="fab fa-telegram"></i>
 										</a>
 									</li>
-									<li>
+									{/* <li>
 										<a href="#">
 											<i class="fab fa-linkedin-in"></i>
 										</a>
@@ -37,10 +34,13 @@ const Footer = () => {
 										<a href="#">
 											<i class="fab fa-instagram"></i>
 										</a>
-									</li>
+									</li> */}
 								</ul>
 							</div>
-							<div class="footer-menu">
+							<div class="flogo" style={{marginTop: "20px"}}>
+								<a href="#"><img src="assets/images/footer-logo.png" alt="" /></a>
+							</div>
+							{/* <div class="footer-menu">
 								<ul>
 									<li>
 										<a href="#">
@@ -54,21 +54,11 @@ const Footer = () => {
 									</li>
 									<li>
 										<a href="#">
-											Contact
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Terms of Service
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Privacy
+											Disclamer
 										</a>
 									</li>
 								</ul>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>
@@ -76,7 +66,7 @@ const Footer = () => {
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-12">
-									<p>Copyright © 2021.All Rights Reserved By Jugaro</p>
+									<p>© Copyright 2021. All Rights Reserved By Avengers Token</p>
 							</div>
 						</div>
 					</div>
