@@ -7,6 +7,8 @@ import HowToPlay from './components/Main/HowToPlay'
 import JoinUs from './components/Main/JoinUs'
 import LatestArchieve from './components/Main/LatestArchieve'
 import About from './components/Main/About'
+import RoadMap from './components/Main/RoadMap'
+import Recent from './components/Main/Recent'
 
 function Home() {
   return (
@@ -15,8 +17,10 @@ function Home() {
       <CounterArea />
       <About />
       <BuyPresale/>
-      <GamePlay />
+      <RoadMap />
+      <Recent />
       <LatestArchieve />
+      <GamePlay />
       <JoinUs />
       <HowToPlay />
     </div>
