@@ -2,11 +2,14 @@ import React from 'react'
 
 const RoadMap = () => {
     return (
-        <section class="ex-lottery ex-lottery2">
+        <section class="ex-lottery ex-lottery2" style={{paddingTop: "60px"}}>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-heading">
+                            <h1 class="title">
+                                Tokenomics
+                            </h1>
                             <h1 style={{fontSize: "30px"}} class="subtitle">
                                 Avengers Token, Assemble
                             </h1>
