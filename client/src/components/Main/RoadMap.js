@@ -8,7 +8,7 @@ const RoadMap = () => {
                     <div class="col-lg-12">
                         <div class="section-heading">
                             <h1 class="title">
-                                Tokenomics
+                                Road Map
                             </h1>
                             <h1 style={{fontSize: "30px"}} class="subtitle">
                                 Avengers Token, Assemble
