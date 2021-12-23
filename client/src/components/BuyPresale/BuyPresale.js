@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import abiAVET from "./../../abiAVET.json";
 import abiSeedContract from "./../../abiSeedContract.json";
@@ -107,6 +107,14 @@ const BuyPresale = () => {
             // gasPrice: 20e9
         });
 	}
+
+    window.ethereum.on('accountsChanged', function (accounts) {
+        connectWallet();
+    })
+
+    useEffect(() => {
+        connectWallet();
+    }, []);
 
     return (
         <div>

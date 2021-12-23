@@ -89,6 +89,10 @@ const Wallet = () => {
         setBalance(balance);
     }
 
+    window.ethereum.on('accountsChanged', function (accounts) {
+        connectWallet();
+    })
+
     useEffect(() => {
         connectWallet();
     }, []);
