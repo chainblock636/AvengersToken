@@ -124,7 +124,7 @@ const header = () => {
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="tournaments.html">
+                          <a class="nav-link" href="#Tokenomics">
                             Tokenomics
                           </a>
                         </li>
