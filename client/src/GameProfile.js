@@ -4,6 +4,7 @@ import UserMenu from './components/GameProfile/UserMenu'
 import UserMainDash from './components/GameProfile/UserMainDash'
 import GameProfileTop from './components/GameProfile/GameProfileTop'
 import Subscribe from './components/GameProfile/Subscribe'
+import Contact from './components/Main/Contact'
 
 const GameProfile = () => {
     return (
@@ -34,8 +35,8 @@ const GameProfile = () => {
             </section>
             {/* <GameProfileTop />
             <UserMenu />
-            <UserMainDash />
-            <Subscribe /> */}
+            <UserMainDash /> */}
+            <Contact />
         </div>
     )
 }
