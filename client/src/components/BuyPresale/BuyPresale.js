@@ -79,7 +79,7 @@ const BuyPresale = () => {
         const seedContractAddress = "0x285C07a306aD8b1d49a46b7A7Cff3853051AFa67";
         
         let tokenContract = new ethers.Contract(tokenAddress, abiAVET, signer);
-        setSeedContract(tokenContract);
+        setTokenContract(tokenContract);
 
         let seedContract = new ethers.Contract(seedContractAddress, abiSeedContract, signer);
         setSeedContract(seedContract);
@@ -91,6 +91,7 @@ const BuyPresale = () => {
         let balance = await tokenContract.balanceOf(defaultAccount);
         console.log("bal 1 ", balance);
         balance = ethers.utils.formatUnits(balance, 6);
+        // let balance = ethers.utils.formatEther(balance);
         console.log("Bal 2 ", balance);
         setBalance(balance);
     }
