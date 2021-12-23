@@ -1,9 +1,104 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { ethers } from "ethers";
+import abiAVET from "./../../abiAVET.json";
+import abiSeedContract from "./../../abiSeedContract.json";
 
-const BuyPresale = () => {  
-    
-	const buySeedSale = (event) => {
+const BuyPresale = () => {      
+    const [errorMessage, setErrorMessage] = useState(null);
+    const [flag, setFlag] = useState(false);
+    const [defaultAccount, setDefaultAccount] = useState("");
+    const [balance, setBalance] = useState(15);
+  
+    const [provider, setProvider] = useState(null);
+    const [signer, setSigner] = useState(null);
+    const [tokenContract, setTokenContract] = useState(null);
+    const [seedContract, setSeedContract] = useState(null);
+
+    async function connectWallet() {
+        if (window.ethereum) {
+            // try {
+                // check if the chain to connect to is installed
+                // await window.ethereum.request({
+                //   method: 'wallet_switchEthereumChain',
+                //   params: [{ chainId: '0x38' }], // chainId must be in hexadecimal numbers
+                // });
+                // setErrorMessage(null);
+                try {
+                        let accounts = await window.ethereum.request({
+                        method: "eth_requestAccounts"
+                    });
+                    let address = accounts[0];
+                    setDefaultAccount(address);
+                    setErrorMessage(null);
+                    setFlag(true);
+                    updateProvider();
+                    getTokenBal();
+                } catch (error) {
+                    setErrorMessage(error["message"]);
+                }
+            // } catch (error) {
+            //     // This error code indicates that the chain has not been added to MetaMask
+            //     // if it is not, then install it into the user MetaMask
+            //     if (error.code === 4902) {
+            //       try {
+            //         await window.ethereum.request({
+            //           method: 'wallet_addEthereumChain',
+            //           params: [
+            //             {
+            //                 chainId: '0x38',
+            //                 chainName: 'Binance Smart Chain',
+            //                 nativeCurrency:
+            //                     {
+            //                         name: 'BNB',
+            //                         symbol: 'BNB',
+            //                         decimals: 18
+            //                     },
+            //                 rpcUrls: ['https://bsc-dataseed.binance.org/'],
+            //                 blockExplorerUrls: ['https://bscscan.com/'],
+            //             },
+            //           ],
+            //         });
+            //       } catch (addError) {
+            //         setErrorMessage("Could not find Binance Smart Chain Network. Try adding the BSC to your metamask.");
+            //       }
+            //     }
+            //     setErrorMessage("Binance Smart Chain is not in use. Try switching to the BSC network.");
+            // }
+        } else {
+          setErrorMessage('Install metamask or use blockchain enabled browser.');
+        }
+    }
+
+    const updateProvider = () =>{
+        let provider = new ethers.providers.Web3Provider(window.ethereum);
+        setProvider(provider);
+
+        let signer = provider.getSigner();
+        setSigner(signer);
+        const tokenAddress = "0xF46FFD755142c32cE1b4bF8d47bb7b4fdA61a5E4";
+        const seedContractAddress = "0x285C07a306aD8b1d49a46b7A7Cff3853051AFa67";
+        
+        let tokenContract = new ethers.Contract(tokenAddress, abiAVET, signer);
+        setSeedContract(tokenContract);
+
+        let seedContract = new ethers.Contract(seedContractAddress, abiSeedContract, signer);
+        setSeedContract(seedContract);
+    }
+
+    const getTokenBal = async () =>{
+        // let balance = await tokenContract.balanceOf(defaultAccount);
+        // setBalance(balance);
+    }
+
+	const buySeedSale = async (event) => {
 		event.preventDefault();
+        connectWallet();
+        let amount = event.target.setAmount.value;
+        console.log(seedContract);
+        await seedContract.functions.invest(amount, {
+            from: defaultAccount,
+            gasLimit: 500000
+        });
 	}
 
     return (
@@ -38,7 +133,7 @@ const BuyPresale = () => {
                                                     <div class="current-balance">
                                                         <p>Current Balance</p>
                                                         <h4>
-                                                            0 <span>AVET</span>
+                                                            {balance} <span>AVET</span>
                                                         </h4>
                                                         <span class="t-sm">
                                                             {/* 1BTC = 39746.90 USD */}
@@ -59,7 +154,7 @@ const BuyPresale = () => {
                                                                     <form  onSubmit={buySeedSale}>
                                                                         <div class="form-group">
                                                                             <label for="">Amount</label>
-                                                                            <input type="text" class="input-field" placeholder="Amount"/>
+                                                                            <input type="text" id="setAmount" class="input-field" placeholder="Amount"/>
                                                                         </div>
                                                                         <button type="submit" class="mybtn2">Buy</button>
                                                                     </form>

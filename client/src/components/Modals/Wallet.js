@@ -7,22 +7,22 @@ const Wallet = () => {
     const [errorMessage, setErrorMessage] = useState(null);
     const [flag, setFlag] = useState(false);
     const [defaultAccount, setDefaultAccount] = useState("");
-    const [balance, setBalance] = useState(0);
+    const [balance, setBalance] = useState(15);
     const [connButtonText, setConnButtonText] = useState("Connect Wallet");
   
     const [provider, setProvider] = useState(null);
     const [signer, setSigner] = useState(null);
     const [tokenContract, setTokenContract] = useState(null);
-    const [seedContractAddress, setSeedContractAddress] = useState(null);
+
     async function connectWallet() {
         if (window.ethereum) {
-            try {
+            // try {
                 // check if the chain to connect to is installed
-                await window.ethereum.request({
-                  method: 'wallet_switchEthereumChain',
-                  params: [{ chainId: '0x38' }], // chainId must be in hexadecimal numbers
-                });
-                setErrorMessage(null);
+                // await window.ethereum.request({
+                //   method: 'wallet_switchEthereumChain',
+                //   params: [{ chainId: '0x38' }], // chainId must be in hexadecimal numbers
+                // });
+                // setErrorMessage(null);
                 try {
                         let accounts = await window.ethereum.request({
                         method: "eth_requestAccounts"
@@ -37,34 +37,34 @@ const Wallet = () => {
                 } catch (error) {
                     setErrorMessage(error["message"]);
                 }
-            } catch (error) {
-                // This error code indicates that the chain has not been added to MetaMask
-                // if it is not, then install it into the user MetaMask
-                if (error.code === 4902) {
-                  try {
-                    await window.ethereum.request({
-                      method: 'wallet_addEthereumChain',
-                      params: [
-                        {
-                            chainId: '0x38',
-                            chainName: 'Binance Smart Chain',
-                            nativeCurrency:
-                                {
-                                    name: 'BNB',
-                                    symbol: 'BNB',
-                                    decimals: 18
-                                },
-                            rpcUrls: ['https://bsc-dataseed.binance.org/'],
-                            blockExplorerUrls: ['https://bscscan.com/'],
-                        },
-                      ],
-                    });
-                  } catch (addError) {
-                    setErrorMessage("Could not find Binance Smart Chain Network. Try adding the BSC to your metamask.");
-                  }
-                }
-                setErrorMessage("Binance Smart Chain is not in use. Try switching to the BSC network.");
-            }
+            // } catch (error) {
+            //     // This error code indicates that the chain has not been added to MetaMask
+            //     // if it is not, then install it into the user MetaMask
+            //     if (error.code === 4902) {
+            //       try {
+            //         await window.ethereum.request({
+            //           method: 'wallet_addEthereumChain',
+            //           params: [
+            //             {
+            //                 chainId: '0x38',
+            //                 chainName: 'Binance Smart Chain',
+            //                 nativeCurrency:
+            //                     {
+            //                         name: 'BNB',
+            //                         symbol: 'BNB',
+            //                         decimals: 18
+            //                     },
+            //                 rpcUrls: ['https://bsc-dataseed.binance.org/'],
+            //                 blockExplorerUrls: ['https://bscscan.com/'],
+            //             },
+            //           ],
+            //         });
+            //       } catch (addError) {
+            //         setErrorMessage("Could not find Binance Smart Chain Network. Try adding the BSC to your metamask.");
+            //       }
+            //     }
+            //     setErrorMessage("Binance Smart Chain is not in use. Try switching to the BSC network.");
+            // }
         } else {
           setErrorMessage('Install metamask or use blockchain enabled browser.');
         }
@@ -77,19 +77,21 @@ const Wallet = () => {
         let signer = provider.getSigner();
         setSigner(signer);
         const tokenAddress = "0xF46FFD755142c32cE1b4bF8d47bb7b4fdA61a5E4";
-        const seedContractAddress = "0xF46FFD755142c32cE1b4bF8d47bb7b4fdA61a5E4";
         
         let tokenContract = new ethers.Contract(tokenAddress, abiAVET, signer);
         setTokenContract(tokenContract);
     }
 
     const getTokenBal = async () =>{
-        // let balance = "90";
+        console.log(tokenContract);
+        console.log(defaultAccount);
         let balance = await tokenContract.balanceOf(defaultAccount);
-        setBalance(balance);
+        console.log("1 ", balance);
+        // setBalance(balance);
+        // console.log("2 ", balance);
     }
 
-    React.useEffect(() => {
+    useEffect(() => {
         connectWallet();
     }, []);
 
