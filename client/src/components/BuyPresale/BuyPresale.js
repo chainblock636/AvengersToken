@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const BuyPresale = () => {  
     return (
         <div>
-            <section class="ex-lottery" id="buypresale">
+            <section class="ex-lottery" id="buy-presale">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">

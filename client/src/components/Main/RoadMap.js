@@ -2,7 +2,7 @@ import React from 'react'
 
 const RoadMap = () => {
     return (
-        <section id="RoadMap" class="ex-lottery ex-lottery2" style={{paddingTop: "60px"}}>
+        <section id="roadmap" class="ex-lottery ex-lottery2" style={{paddingTop: "60px"}}>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">

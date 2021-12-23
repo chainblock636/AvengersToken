@@ -22,7 +22,7 @@ const About = () => {
 		// 		</div>
 		// 	</div>
 		// </section>
-        <div id="About">
+        <div id="about">
             <section class="about-section" style={{padding: "30px 0px"}}>
 				<img class="s1" src="assets/images/about/s1.png" alt=""/>
 				<img class="s2" src="assets/images/about/s2.png" alt=""/>

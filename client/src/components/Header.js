@@ -114,18 +114,18 @@ const header = () => {
                           </a>
                         </li> */}
                         <li class="nav-item">
-                          <a class="nav-link" href="#About">
+                          <a class="nav-link" href="#about">
                             
                             About
                           </a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#RoadMap">
+                        <a class="nav-link" href="#roadmap">
                             Road Map
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="tournaments.html">
+                          <a class="nav-link" href="#tokenomics">
                             Tokenomics
                           </a>
                         </li>
