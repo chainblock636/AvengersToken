@@ -29,9 +29,20 @@ const BuyPresale = () => {
                                     <div class="wallet-tab-content" id="pills-tabContent">
                                         <div class="dipo-box">
                                             <div class="row">
-                                                <div class="col-lg-8 m-auto">
+                                                <div class="col-lg-4">
+                                                    <div class="current-balance">
+                                                        <p>Current Balance</p>
+                                                        <h4>
+                                                            0.00051 <span>BTC</span>
+                                                        </h4>
+                                                        <span class="t-sm">
+                                                            1BTC = 39746.90 USD
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8">
                                                     <div class="dipo_btc">
-                                                        <div class="header-area text-center">
+                                                        <div class="header-area">
                                                             <h4>1,800,000,000 AVET = 1 BNB (Limited offer)</h4>
                                                             <p>
                                                                 Min Presale Investment 0.02BNB - Max Presale Investment 0.4BNB

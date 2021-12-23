@@ -4,7 +4,11 @@ const Contact = () => {
 	const style = {
 		paddingTop: "0px",
 		height: 150
-	  };
+	};
+
+	const copy = (event) => {
+		event.preventDefault();
+	}
 
     return (
         <div>
@@ -30,7 +34,7 @@ const Contact = () => {
 														<a href="https://twitter.com/AvengersTokens"><i class="fab fa-twitter"></i></a>
 													</div>
 													<div style={{margin: "auto"}} class="icon">
-													<a href=""><i class="fab fa-discord"></i></a>
+													<a href="#"><i class="fab fa-discord"></i></a>
 													</div>
 												</div>
 											</div>
@@ -61,10 +65,10 @@ const Contact = () => {
 									
 										<div class="col-lg-6 col-12">
 											
-											<form  class="form-area">
-													<input type="text" placeholder="Coming soon" />
-													<button class="mybtn1" type="submit"><i class="fas fa-file"></i> Copy
-													</button>
+											<form onSubmit={copy} class="form-area">
+												<input type="text" placeholder="Coming soon" />
+												<button class="mybtn1" type="submit"><i class="fas fa-file"></i> Copy
+												</button>
 											</form>
 										</div>
 									</div>

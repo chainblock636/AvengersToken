@@ -3,7 +3,7 @@ import React from 'react'
 const HeroArea = () => {
     return (
         <div>
-			<div class="hero-area" id="HeroArea">
+			<div class="hero-area" id="home">
 				<img class="shape parallax5" src="assets/images/home/h2-shape.png" alt="" />
 				<div class="container">
 					<div class="row">

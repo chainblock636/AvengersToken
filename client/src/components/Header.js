@@ -80,7 +80,7 @@ const header = () => {
               <div class="row">
                 <div class="col-lg-12">
                   <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="https://avengerstoken.org/">
+                    <a class="navbar-brand" href="#home">
                       <img src="assets/images/logo.png" alt="" />
                     </a>
                     <button
@@ -100,10 +100,10 @@ const header = () => {
                     >
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                          <a class="nav-link" href="#HeroArea">
-                            <NavLink to="/">
+                          <a class="nav-link" href="#home">
+                            {/* <NavLink to="/"> */}
                             Home
-                            </NavLink>
+                            {/* </NavLink> */}
                           </a>
                         </li>
                         {/* <li class="nav-item">
@@ -115,7 +115,6 @@ const header = () => {
                         </li> */}
                         <li class="nav-item">
                           <a class="nav-link" href="#about">
-                            
                             About
                           </a>
                         </li>
