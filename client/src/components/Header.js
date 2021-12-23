@@ -106,13 +106,13 @@ const header = () => {
                             </NavLink>
                           </a>
                         </li>
-                        <li class="nav-item">
+                        {/* <li class="nav-item">
                           <a class="nav-link" href="#">
                           <NavLink to="/staking">
                             DAO/Staking
                             </NavLink>
                           </a>
-                        </li>
+                        </li> */}
                         <li class="nav-item">
                           <a class="nav-link" href="#About">
                             About
