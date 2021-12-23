@@ -11,14 +11,31 @@ const JoinUs = () => {
 						<div class="col-xl-4">
 							<div class="section-heading content-left">
 								<h5 class="subtitle">
-									Every day lots of wins
+									Tokenomics
 								</h5>
-								<h2 class="title ">
-									Be One of Them
-								</h2>
 								<h6 class="text">
-									Get started in less than 5 min - no credit card required.Gain 
-		early access to Jugaro and experience crypto like never before.
+								Pre-seed sale 1%
+								</h6>
+								<h6 class="text">
+								Seed sale 4%
+								</h6>
+								<h6 class="text">
+								Public sale 30% 
+								</h6>
+								<h6 class="text">
+								Team 5% (2 years vesting)
+								</h6>
+								<h6 class="text">
+								Advisor and investors 5% (2 years vesting)
+								</h6>
+								<h6 class="text">
+								Community, airdrop and staking reward (external 5%) 25% - 3 years program
+								</h6>
+								<h6 class="text">
+								Development 10%
+								</h6>
+								<h6 class="text">
+								Marketing 20%
 								</h6>
 							</div>
 						</div>
