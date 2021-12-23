@@ -18,7 +18,7 @@ const Wallet = () => {
                 message
             });
         } else {
-            const message = 'Current network "undefined", Use blockchain enabled browser.';    
+            const message = 'Current network "undefined", Install metamask or use blockchain enabled browser.';    
             setContractInfo({
                 message
             });
