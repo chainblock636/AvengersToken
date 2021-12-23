@@ -33,10 +33,10 @@ const BuyPresale = () => {
                                                     <div class="current-balance">
                                                         <p>Current Balance</p>
                                                         <h4>
-                                                            0.00051 <span>BTC</span>
+                                                            0 <span>AVET</span>
                                                         </h4>
                                                         <span class="t-sm">
-                                                            1BTC = 39746.90 USD
+                                                            {/* 1BTC = 39746.90 USD */}
                                                         </span>
                                                     </div>
                                                 </div>
