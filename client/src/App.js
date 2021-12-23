@@ -4,18 +4,11 @@ import Header from './components/Header';
 import Modals from './components/Main/Modals';
 import Preloader from './components/Preloader';
 import Home from './Home';
-import GameProfile from './GameProfile';
+import GameProfile from './GameProfile'; 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Wallet from './components/Modals/Wallet';
 
 const App = () => {
-  React.useEffect(() => {
-      if (window.ethereum) { 
-          console.log(window.ethereum);
-      } else {
-          alert('Current network "undefined", Use ethereum enabled browser.');
-      }
-  }, []);
-
   return (
     <div>
       <Router>
@@ -27,6 +20,7 @@ const App = () => {
         </Routes>
         <Footer />
         <Modals />
+        <Wallet />
       </Router>
       
     </div>

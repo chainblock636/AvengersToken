@@ -19,17 +19,16 @@ const RoadMap = () => {
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="ex-lottery-slider">
-                            {/* <div class="slider-item">
+                            <div class="slider-item">
                                 <div class="single-tikit">
                                     <div class="image">
-                                        <span class="tag">Ending Soon</span>
-                                        <img src="assets\images\product\1.png" alt=""/>
+                                        <span style={{backgroundImage: "linear-gradient(-90deg, #fa009f, black)"}} class="tag">i</span>
                                     </div>
                                     <div class="content">
                                         <div class="top-area">
                                             <div class="top-info">
-                                                <span><i class="far fa-clock"></i>13 Hours Left</span>
-                                                <span><i class="fas fa-ticket-alt"></i>99 Tickets Left</span>
+                                                <span>Phase 1</span>
+                                                <span>2021 Q4 (Oct)</span>
                                             </div>
                                             <div class="top-bar">
                                                 <div class="progress-bar"></div>
@@ -37,11 +36,15 @@ const RoadMap = () => {
                                             </div>
                                         </div>
                                         <div class="content-area">
-                                            <h4>HyperX Pulsefire FPS PRO</h4>
-                                            <div class="c-bottom">
-                                                <span>Valued at €51.99</span>
-                                                <a href="#" class="mybtn1">Buy Ticket</a>
-                                            </div>
+                                            <p>
+                                            Early research and analysis on the feasibility of the project
+                                            </p>
+                                            <p>
+                                            Establishment of the team
+                                            </p>
+                                            <p>
+                                            Seed sowing round and Private round financing
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -49,14 +52,15 @@ const RoadMap = () => {
                             <div class="slider-item">
                                 <div class="single-tikit">
                                     <div class="image">
-                                        <span class="tag">Ending Soon</span>
-                                        <img src="assets\images\product\2.png" alt=""/>
+                                        {/* if done comment outx */}
+                                        <span style={{backgroundImage: "linear-gradient(-90deg, red, blue)"}} class="tag">active</span>
+                                        {/* <span class="tag">coming soon</span> */}
                                     </div>
                                     <div class="content">
                                         <div class="top-area">
                                             <div class="top-info">
-                                                <span><i class="far fa-clock"></i>13 Hours Left</span>
-                                                <span><i class="fas fa-ticket-alt"></i>99 Tickets Left</span>
+                                                <span><i class="far fa-clock"></i>Phase 1</span>
+                                                <span>2022 Q1 (Dec)</span>
                                             </div>
                                             <div class="top-bar">
                                                 <div class="progress-bar"></div>
@@ -64,11 +68,21 @@ const RoadMap = () => {
                                             </div>
                                         </div>
                                         <div class="content-area">
-                                            <h4>HyperX - JETBLACK</h4>
-                                            <div class="c-bottom">
-                                                <span>Valued at €51.99</span>
-                                                <a href="#" class="mybtn1">Buy Ticket</a>
-                                            </div>
+                                            <p>
+                                            Website Launch
+                                            </p>
+                                            <p>
+                                            5000 Telegram Members
+                                            </p>
+                                            <p>
+                                            Website Launch
+                                            </p>
+                                            <p>
+                                            Website Launch
+                                            </p>
+                                            <p>
+                                            Website Launch
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -76,14 +90,15 @@ const RoadMap = () => {
                             <div class="slider-item">
                                 <div class="single-tikit">
                                     <div class="image">
-                                        <span class="tag">Ending Soon</span>
-                                        <img src="assets\images\product\3.png" alt=""/>
+                                        {/* if done comment outx */}
+                                        {/* <span style={{backgroundImage: "linear-gradient(-90deg, red, blue)"}} class="tag">active</span> */}
+                                        <span class="tag">coming soon</span>
                                     </div>
                                     <div class="content">
                                         <div class="top-area">
                                             <div class="top-info">
-                                                <span><i class="far fa-clock"></i>13 Hours Left</span>
-                                                <span><i class="fas fa-ticket-alt"></i>99 Tickets Left</span>
+                                                <span><i class="far fa-clock"></i>Phase 2</span>
+                                                <span>2022 Q1 (Jan)</span>
                                             </div>
                                             <div class="top-bar">
                                                 <div class="progress-bar"></div>
@@ -91,11 +106,18 @@ const RoadMap = () => {
                                             </div>
                                         </div>
                                         <div class="content-area">
-                                            <h4>HyperX Cloud II Gunmetal</h4>
-                                            <div class="c-bottom">
-                                                <span>Valued at €51.99</span>
-                                                <a href="#" class="mybtn1">Buy Ticket</a>
-                                            </div>
+                                            <p>
+                                            5000 Telegram Members
+                                            </p>
+                                            <p>
+                                            Presale Launch
+                                            </p>
+                                            <p>
+                                            Listing on CoinGecko & CoinMarketCap
+                                            </p>
+                                            <p>
+                                            1st Airdrop Launch
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -103,14 +125,15 @@ const RoadMap = () => {
                             <div class="slider-item">
                                 <div class="single-tikit">
                                     <div class="image">
-                                        <span class="tag">Ending Soon</span>
-                                        <img src="assets\images\product\1.png" alt=""/>
+                                        {/* if done comment outx */}
+                                        <span style={{backgroundImage: "linear-gradient(-90deg, red, blue)"}} class="tag">active</span>
+                                        {/* <span class="tag">coming soon</span> */}
                                     </div>
                                     <div class="content">
                                         <div class="top-area">
                                             <div class="top-info">
-                                                <span><i class="far fa-clock"></i>13 Hours Left</span>
-                                                <span><i class="fas fa-ticket-alt"></i>99 Tickets Left</span>
+                                                <span><i class="far fa-clock"></i>Phase 1</span>
+                                                <span>2022 Q1 (Dec)</span>
                                             </div>
                                             <div class="top-bar">
                                                 <div class="progress-bar"></div>
@@ -118,15 +141,60 @@ const RoadMap = () => {
                                             </div>
                                         </div>
                                         <div class="content-area">
-                                            <h4>HyperX Pulsefire FPS PRO</h4>
-                                            <div class="c-bottom">
-                                                <span>Valued at €51.99</span>
-                                                <a href="#" class="mybtn1">Buy Ticket</a>
-                                            </div>
+                                            <p>
+                                            Website Launch
+                                            </p>
+                                            <p>
+                                            5000 Telegram Members
+                                            </p>
+                                            <p>
+                                            Website Launch
+                                            </p>
+                                            <p>
+                                            Website Launch
+                                            </p>
+                                            <p>
+                                            Website Launch
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
-                            </div> */}
+                            </div>
+                            <div class="slider-item">
+                                <div class="single-tikit">
+                                    <div class="image">
+                                        {/* if done comment outx */}
+                                        {/* <span style={{backgroundImage: "linear-gradient(-90deg, red, blue)"}} class="tag">active</span> */}
+                                        <span class="tag">coming soon</span>
+                                    </div>
+                                    <div class="content">
+                                        <div class="top-area">
+                                            <div class="top-info">
+                                                <span><i class="far fa-clock"></i>Phase 2</span>
+                                                <span>2022 Q1 (Jan)</span>
+                                            </div>
+                                            <div class="top-bar">
+                                                <div class="progress-bar"></div>
+                                                <div class="main-bar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="content-area">
+                                            <p>
+                                            5000 Telegram Members
+                                            </p>
+                                            <p>
+                                            Presale Launch
+                                            </p>
+                                            <p>
+                                            Listing on CoinGecko & CoinMarketCap
+                                            </p>
+                                            <p>
+                                            1st Airdrop Launch
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

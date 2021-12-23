@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HowToPlay = () => {
+const HowToBuy = () => {
     return (
         <div>
 			<section class="how-to-play" style={{paddingBottom: "320px"}}>
@@ -45,4 +45,4 @@ const HowToPlay = () => {
     )
 }
 
-export default HowToPlay
+export default HowToBuy
