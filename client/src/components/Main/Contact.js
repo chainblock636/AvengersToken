@@ -24,13 +24,13 @@ const Contact = () => {
 											<div class="bottom-content">
 												<div class="single-info center">
 													<div style={{margin: "auto"}} class="icon">
-														<i class="fab fa-telegram"></i>
+													<a href="https://t.me/avengerstokenEN1"><i class="fab fa-telegram"></i></a>
 													</div>
 													<div style={{margin: "auto"}} class="icon">
-														<i class="fab fa-twitter"></i>
+														<a href="https://twitter.com/AvengersTokens"><i class="fab fa-twitter"></i></a>
 													</div>
 													<div style={{margin: "auto"}} class="icon">
-														<i class="fab fa-discord"></i>
+													<a href=""><i class="fab fa-discord"></i></a>
 													</div>
 												</div>
 											</div>
