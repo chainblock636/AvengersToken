@@ -4,7 +4,7 @@ import Chart from "react-google-charts";
 const JoinUs = () => {
     return (
         <div>
-			<section class="join_us">
+			<section class="join_us" id="Tokenomics">
 				{/* <img class="l-image" src="assets/images/joinus_left_img.png" alt="" /> */}
 				<div class="container">
 					<div class="row ">
