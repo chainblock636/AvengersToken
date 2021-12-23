@@ -7,7 +7,7 @@ const BuyPresale = () => {
     const [errorMessage, setErrorMessage] = useState(null);
     const [flag, setFlag] = useState(false);
     const [defaultAccount, setDefaultAccount] = useState("");
-    const [balance, setBalance] = useState(15);
+    const [balance, setBalance] = useState(10);
   
     const [provider, setProvider] = useState(null);
     const [signer, setSigner] = useState(null);
@@ -86,8 +86,13 @@ const BuyPresale = () => {
     }
 
     const getTokenBal = async () =>{
-        // let balance = await tokenContract.balanceOf(defaultAccount);
-        // setBalance(balance);
+        console.log(tokenContract);
+        console.log("accont ", defaultAccount);
+        let balance = await tokenContract.balanceOf(defaultAccount);
+        console.log("bal 1 ", balance);
+        balance = ethers.utils.formatUnits(balance, 6);
+        console.log("Bal 2 ", balance);
+        setBalance(balance);
     }
 
 	const buySeedSale = async (event) => {
@@ -95,9 +100,11 @@ const BuyPresale = () => {
         connectWallet();
         let amount = event.target.setAmount.value;
         console.log(seedContract);
-        await seedContract.functions.invest(amount, {
-            from: defaultAccount,
-            gasLimit: 500000
+        console.log(amount);
+        await seedContract.functions.invest({
+            value: ethers.utils.parseEther(amount),
+            gasLimit: 100000,
+            gasPrice: 20e9
         });
 	}
 

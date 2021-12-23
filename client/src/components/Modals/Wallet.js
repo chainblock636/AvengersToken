@@ -7,7 +7,7 @@ const Wallet = () => {
     const [errorMessage, setErrorMessage] = useState(null);
     const [flag, setFlag] = useState(false);
     const [defaultAccount, setDefaultAccount] = useState("");
-    const [balance, setBalance] = useState(15);
+    const [balance, setBalance] = useState(10);
     const [connButtonText, setConnButtonText] = useState("Connect Wallet");
   
     const [provider, setProvider] = useState(null);
@@ -84,11 +84,12 @@ const Wallet = () => {
 
     const getTokenBal = async () =>{
         console.log(tokenContract);
-        console.log(defaultAccount);
+        console.log("accont ", defaultAccount);
         let balance = await tokenContract.balanceOf(defaultAccount);
-        console.log("1 ", balance);
-        // setBalance(balance);
-        // console.log("2 ", balance);
+        console.log("bal 1 ", balance);
+        balance = ethers.utils.formatUnits(balance, 6);
+        console.log("Bal 2 ", balance);
+        setBalance(balance);
     }
 
     useEffect(() => {
