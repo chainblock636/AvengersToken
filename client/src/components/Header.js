@@ -26,12 +26,12 @@ const header = () => {
                           </a>
                         </li> */}
                         <li>
-                          <a href="#">
+                          <a href="https://twitter.com/AvengersTokens">
                             <i class="fab fa-twitter"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="https://t.me/avengerstokenEN1">
                             <i class="fab fa-telegram"></i>
                           </a>
                         </li>
@@ -80,7 +80,7 @@ const header = () => {
               <div class="row">
                 <div class="col-lg-12">
                   <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="https://avengerstoken.org/">
                       <img src="assets/images/logo.png" alt="" />
                     </a>
                     <button

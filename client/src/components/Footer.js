@@ -19,12 +19,12 @@ const Footer = () => {
 										</a>
 									</li> */}
 									<li>
-										<a href="#">
+										<a href="https://twitter.com/AvengersTokens">
 											<i class="fab fa-twitter"></i>
 										</a>
 									</li>
 									<li>
-										<a href="#">
+										<a href="https://t.me/avengerstokenEN1">
 											<i class="fab fa-telegram"></i>
 										</a>
 									</li>
