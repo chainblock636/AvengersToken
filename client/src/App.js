@@ -7,6 +7,7 @@ import Modal from "react-modal";
 import Home from "./Home";
 import GameProfile from "./GameProfile";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Wallet from './components/Modals/Wallet';
 
 const App = () => {
   const [modal, setModal] = useState(false);
@@ -77,6 +78,7 @@ const App = () => {
           </div>
         </Modal>
         <Modals />
+        <Wallet />
       </Router>
     </div>
   );
