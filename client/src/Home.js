@@ -16,7 +16,7 @@ function Home() {
   return (
     <div>
       <HeroArea />
-      <CounterArea />
+      {/* <CounterArea /> */}
       <About />
       <RoadMap />
       <Recent />

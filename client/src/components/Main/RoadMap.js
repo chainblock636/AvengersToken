@@ -60,7 +60,7 @@ const RoadMap = () => {
                                         <div class="top-area">
                                             <div class="top-info">
                                                 <span><i class="far fa-clock"></i>Phase 1</span>
-                                                <span>2022 Q1 (Dec)</span>
+                                                <span>2021 Q4 (Dec)</span>
                                             </div>
                                             <div class="top-bar">
                                                 <div class="progress-bar"></div>
@@ -75,13 +75,10 @@ const RoadMap = () => {
                                             5000 Telegram Members
                                             </p>
                                             <p>
-                                            Website Launch
+                                            2000 Twitter Members
                                             </p>
                                             <p>
-                                            Website Launch
-                                            </p>
-                                            <p>
-                                            Website Launch
+                                            Pre-seed 
                                             </p>
                                         </div>
                                     </div>
@@ -90,8 +87,6 @@ const RoadMap = () => {
                             <div class="slider-item">
                                 <div class="single-tikit">
                                     <div class="image">
-                                        {/* if done comment outx */}
-                                        {/* <span style={{backgroundImage: "linear-gradient(-90deg, red, blue)"}} class="tag">active</span> */}
                                         <span class="tag">coming soon</span>
                                     </div>
                                     <div class="content">
@@ -107,7 +102,7 @@ const RoadMap = () => {
                                         </div>
                                         <div class="content-area">
                                             <p>
-                                            5000 Telegram Members
+                                            10000 Telegram Members
                                             </p>
                                             <p>
                                             Presale Launch
@@ -125,15 +120,13 @@ const RoadMap = () => {
                             <div class="slider-item">
                                 <div class="single-tikit">
                                     <div class="image">
-                                        {/* if done comment outx */}
-                                        <span style={{backgroundImage: "linear-gradient(-90deg, red, blue)"}} class="tag">active</span>
-                                        {/* <span class="tag">coming soon</span> */}
+                                        <span class="tag">coming soon</span>
                                     </div>
                                     <div class="content">
                                         <div class="top-area">
                                             <div class="top-info">
-                                                <span><i class="far fa-clock"></i>Phase 1</span>
-                                                <span>2022 Q1 (Dec)</span>
+                                                <span><i class="far fa-clock"></i>Phase 2</span>
+                                                <span>2022 Q1 (Feb)</span>
                                             </div>
                                             <div class="top-bar">
                                                 <div class="progress-bar"></div>
@@ -142,19 +135,19 @@ const RoadMap = () => {
                                         </div>
                                         <div class="content-area">
                                             <p>
-                                            Website Launch
+                                            20000 Telegram Members
                                             </p>
                                             <p>
-                                            5000 Telegram Members
+                                            Public Launch 
                                             </p>
                                             <p>
-                                            Website Launch
+                                            Panckaage and Esxchange Listing
                                             </p>
                                             <p>
-                                            Website Launch
+                                            Whitepaper and smart Contract Audit 
                                             </p>
                                             <p>
-                                            Website Launch
+                                            2nd Airdrop 
                                             </p>
                                         </div>
                                     </div>
@@ -163,15 +156,13 @@ const RoadMap = () => {
                             <div class="slider-item">
                                 <div class="single-tikit">
                                     <div class="image">
-                                        {/* if done comment outx */}
-                                        {/* <span style={{backgroundImage: "linear-gradient(-90deg, red, blue)"}} class="tag">active</span> */}
                                         <span class="tag">coming soon</span>
                                     </div>
                                     <div class="content">
                                         <div class="top-area">
                                             <div class="top-info">
-                                                <span><i class="far fa-clock"></i>Phase 2</span>
-                                                <span>2022 Q1 (Jan)</span>
+                                                <span><i class="far fa-clock"></i>Phase 3</span>
+                                                <span>2022 Q2 (Apr)</span>
                                             </div>
                                             <div class="top-bar">
                                                 <div class="progress-bar"></div>
@@ -180,16 +171,37 @@ const RoadMap = () => {
                                         </div>
                                         <div class="content-area">
                                             <p>
-                                            5000 Telegram Members
+                                                DAO
                                             </p>
                                             <p>
-                                            Presale Launch
+                                                Staking
                                             </p>
                                             <p>
-                                            Listing on CoinGecko & CoinMarketCap
+                                                Major partnerships and collaboration
                                             </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-item">
+                                <div class="single-tikit">
+                                    <div class="image">
+                                        <span class="tag">coming soon</span>
+                                    </div>
+                                    <div class="content">
+                                        <div class="top-area">
+                                            <div class="top-info">
+                                                <span><i class="far fa-clock"></i>Phase 4</span>
+                                                <span>2022 Q3</span>
+                                            </div>
+                                            <div class="top-bar">
+                                                <div class="progress-bar"></div>
+                                                <div class="main-bar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="content-area">
                                             <p>
-                                            1st Airdrop Launch
+                                                To be announce
                                             </p>
                                         </div>
                                     </div>
