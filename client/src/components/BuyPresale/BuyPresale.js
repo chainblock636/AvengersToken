@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 
 const BuyPresale = () => {  
+    
+	const buySeedSale = (event) => {
+		event.preventDefault();
+	}
+
     return (
         <div>
             <section class="ex-lottery" id="buy-presale">
@@ -51,7 +56,7 @@ const BuyPresale = () => {
                                                         <div class="form-area">
                                                             <div class="row">
                                                                 <div class="col-md-12">
-                                                                    <form action="#">
+                                                                    <form  onSubmit={buySeedSale}>
                                                                         <div class="form-group">
                                                                             <label for="">Amount</label>
                                                                             <input type="text" class="input-field" placeholder="Amount"/>
