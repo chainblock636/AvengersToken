@@ -18,6 +18,9 @@ const BuyPresale = () => {
                                                         <h2 class="title ">
                                                         Early Investors
                                                         </h2>
+                                                        <h5 class="subtitle">
+                                                            Limited offer
+                                                        </h5>
                                                     </div>
                                                 </div>
                                             </li>
@@ -40,7 +43,7 @@ const BuyPresale = () => {
                                                 <div class="col-lg-8">
                                                     <div class="dipo_btc">
                                                         <div class="header-area">
-                                                            <h4>1,800,000,000 AVET = 1 BNB</h4>
+                                                            <h4>1,800,000,000 AVET = 1 BNB (Limited offer)</h4>
                                                             <p>
                                                                 Min Presale Investment 0.02BNB - Max Presale Investment 0.4BNB
                                                             </p>

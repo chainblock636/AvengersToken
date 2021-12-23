@@ -35,12 +35,12 @@ const header = () => {
                             <i class="fab fa-telegram"></i>
                           </a>
                         </li>
-                        {/* <li>
+                        <li>
                           <a href="#">
-                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fab fa-discord"></i>
                           </a>
                         </li>
-                        <li>
+                        {/* <li>
                           <a href="#">
                             <i class="fab fa-instagram"></i>
                           </a>

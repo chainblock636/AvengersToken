@@ -22,7 +22,7 @@ function Home() {
       <Recent />
       {/* <LatestArchieve /> */}
       {/* <GamePlay /> */}
-      {/* <JoinUs /> */}
+      <JoinUs />
       <BuyPresale/>
       <HowToBuy />
       <Contact />
