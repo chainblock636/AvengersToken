@@ -7,7 +7,7 @@ const BuyPresale = () => {
     const [errorMessage, setErrorMessage] = useState(null);
     const [flag, setFlag] = useState(false);
     const [defaultAccount, setDefaultAccount] = useState("");
-    const [balance, setBalance] = useState(10);
+    const [balance, setBalance] = useState(0);
   
     const [provider, setProvider] = useState(null);
     const [signer, setSigner] = useState(null);
@@ -90,8 +90,7 @@ const BuyPresale = () => {
         console.log("accont ", defaultAccount);
         let balance = await tokenContract.balanceOf(defaultAccount);
         console.log("bal 1 ", balance);
-        balance = ethers.utils.formatUnits(balance, 6);
-        // let balance = ethers.utils.formatEther(balance);
+        balance = ethers.utils.formatUnits(balance, 18);
         console.log("Bal 2 ", balance);
         setBalance(balance);
     }
@@ -104,8 +103,8 @@ const BuyPresale = () => {
         console.log(amount);
         await seedContract.functions.invest({
             value: ethers.utils.parseEther(amount),
-            gasLimit: 100000,
-            gasPrice: 20e9
+            // gasLimit: 100000,
+            // gasPrice: 20e9
         });
 	}
 
