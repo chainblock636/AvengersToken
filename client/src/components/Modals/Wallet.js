@@ -35,6 +35,7 @@ const Wallet = () => {
                     updateProvider();
                     getTokenBal();
                 } catch (error) {
+                    setFlag(false);
                     setErrorMessage("Ensure you are on Binance Smart Chain Network");
                 }
             // } catch (error) {
@@ -89,7 +90,8 @@ const Wallet = () => {
             setBalance(balance);
             setErrorMessage(null);
         } catch (error) {
-            setErrorMessage(error.message);
+            setErrorMessage("reload wallet");
+            setFlag(false);
         }
     }
 
@@ -98,6 +100,7 @@ const Wallet = () => {
             let address = accounts[0];
             setDefaultAccount(address);
             connectWallet();
+            getTokenBal();
         })
     }
 
