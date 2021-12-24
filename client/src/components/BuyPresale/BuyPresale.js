@@ -13,6 +13,7 @@ const BuyPresale = () => {
     }
        
     const [errorMessage, setErrorMessage] = useState(null);
+    const [errorInput, setErrorInput] = useState(null);
     const [flag, setFlag] = useState(false);
     const [defaultAccount, setDefaultAccount] = useState("");
     const [balance, setBalance] = useState(0);
@@ -42,7 +43,7 @@ const BuyPresale = () => {
                     updateProvider();
                     getTokenBal();
                 } catch (error) {
-                    setErrorMessage(error["message"]);
+                    setErrorMessage("Ensure you are on Binance Smart Chain Network");
                 }
             // } catch (error) {
             //     // This error code indicates that the chain has not been added to MetaMask
@@ -104,15 +105,15 @@ const BuyPresale = () => {
         let amount = event.target.setAmount.value;
         if (!(!isNaN(amount) && amount.toString().indexOf('.') != -1))
         {
-            setErrorMessage("Enter a valid amount - Min: 0.02 BNB, Max: 0.4 BNB");
+            setErrorInput("Enter a valid amount - Min: 0.02 BNB, Max: 0.4 BNB");
             return false
         }
         if (amount > max){
-            setErrorMessage("You cannot invest more than 0.4 BNB");
+            setErrorInput("You cannot invest more than 0.4 BNB");
             return false
         };
         if (amount < min) {
-            setErrorMessage("minimum investment is 0.02 BNB");
+            setErrorInput("minimum investment is 0.02 BNB");
             return false
         };
         connectWallet();
@@ -124,7 +125,7 @@ const BuyPresale = () => {
             });
             setErrorMessage(null);
         } catch (error) {
-            setErrorMessage(error.message);
+            setErrorInput("Ensure you are on Binance Smart Chain Network");
         }
 	}
 
@@ -195,7 +196,7 @@ const BuyPresale = () => {
                                                                             <label for="">Amount</label>
                                                                             <input type="text" id="setAmount" class="input-field" placeholder="Amount"/>
                                                                         </div>
-                                                                        <p style={errorStyle} class="text-center">{errorMessage}</p>
+                                                                        <p style={errorStyle} class="text-center">{errorInput}</p>
                                                                         <button type="submit" class="mybtn2">Buy</button>
                                                                     </form>
         
