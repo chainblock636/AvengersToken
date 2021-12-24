@@ -96,7 +96,7 @@ const BuyPresale = () => {
 
     const getTokenBal = async () =>{
         let balance = await tokenContract.balanceOf(defaultAccount);
-        balance = ethers.utils.formatUnits(balance, 18);
+        balance = ethers.utils.formatUnits(balance, 8);
         setBalance(balance);
     }
 
