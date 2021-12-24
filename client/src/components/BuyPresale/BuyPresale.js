@@ -5,7 +5,12 @@ import abiSeedContract from "./../../abiSeedContract.json";
 
 const BuyPresale = () => {   
     const min = 0.02;
-    const max = 0.5;
+    const max = 0.4;
+    const errorStyle = {
+        fontSize: "16px",
+        color: "red",
+        margin: 0
+    }
        
     const [errorMessage, setErrorMessage] = useState(null);
     const [flag, setFlag] = useState(false);
@@ -108,23 +113,24 @@ const BuyPresale = () => {
             return false
         }
         if (amount > max){
-            setErrorMessage("You cannot invest more than ", max, "BNB");
-            console.log("You cannot invest more than ", max, "BNB");
+            setErrorMessage("You cannot invest more than 0.4 BNB");
             return false
         };
         if (amount < min) {
-            setErrorMessage("minimum investment is ", min, "BNB");
-            console.log("minimum investment is ", min, "BNB");
+            setErrorMessage("minimum investment is 0.02 BNB");
             return false
         };
         connectWallet();
-        console.log(seedContract);
-        console.log(amount);
-        await seedContract.functions.invest({
-            value: ethers.utils.parseEther(amount),
-            // gasLimit: 100000,
-            // gasPrice: 20e9
-        });
+        try {
+            await seedContract.functions.invest({
+                value: ethers.utils.parseEther(amount),
+                // gasLimit: 100000,
+                // gasPrice: 20e9
+            });
+            setErrorMessage(null);
+        } catch (error) {
+            setErrorMessage(error.message);
+        }
 	}
 
     window.ethereum.on('accountsChanged', function (accounts) {
@@ -190,6 +196,7 @@ const BuyPresale = () => {
                                                                             <label for="">Amount</label>
                                                                             <input type="text" id="setAmount" class="input-field" placeholder="Amount"/>
                                                                         </div>
+                                                                        <p style={errorStyle} class="text-center">{errorMessage}</p>
                                                                         <button type="submit" class="mybtn2">Buy</button>
                                                                     </form>
         
