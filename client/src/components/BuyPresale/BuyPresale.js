@@ -16,7 +16,7 @@ const BuyPresale = () => {
     const [errorInput, setErrorInput] = useState(null);
     const [flag, setFlag] = useState(false);
     const [defaultAccount, setDefaultAccount] = useState("");
-    const [balance, setBalance] = useState(100);
+    const [balance, setBalance] = useState(0);
   
     const [provider, setProvider] = useState(null);
     const [signer, setSigner] = useState(null);
