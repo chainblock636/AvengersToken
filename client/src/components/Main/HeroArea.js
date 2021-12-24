@@ -20,7 +20,7 @@ const HeroArea = () => {
 										{/* <img src="assets/images/text.png" alt="" /> */}
 									</h1>
 									<div class="links">
-										<a href="#buy-presale" class="mybtn1">Buy Presale </a>
+										<a href="#buy-presale" class="mybtn1">Buy Now </a>
 										{/* <a style={{margin: "0px 10px"}} class="mybtn2">White Paper</a> */}
 										{/* <a href="../../watch.html?v=jssO8-5qmag" class="video_btn play-video mfp-iframe">
 											<i class="fas fa-play"></i>
