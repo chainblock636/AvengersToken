@@ -135,8 +135,6 @@ const BuyPresale = () => {
 
     window.ethereum.on('accountsChanged', function (accounts) {
         console.log("account changed........ onchanged");
-        let address = accounts[0];
-        setDefaultAccount(address);
         connectWallet();
     })
 
