@@ -1,7 +1,7 @@
 import React from 'react'
 import Chart from "react-google-charts";
 
-const JoinUs = () => {
+const Tokenomics = () => {
     return (
         <div>
 			<section class="join_us" id="tokenomics">
@@ -13,10 +13,10 @@ const JoinUs = () => {
 									Tokenomics
 								</h5>
 								<h6 class="text">
-								Pre-seed sale 1%
+								Seed sale 1%
 								</h6>
 								<h6 class="text">
-								Seed sale 4%
+								Private sale 4%
 								</h6>
 								<h6 class="text">
 								Public sale 30% 
@@ -47,7 +47,7 @@ const JoinUs = () => {
 								loader={<div>Avengers Token</div>}
 								data={[
 									["Token", "Percentage shared"],
-									["Pre-seed sale",  7500000000],
+									["Seed sale",  7500000000],
 									["Private sale", 30000000000],
 									["Launchpad Presale",  225000000000],
 									["Team", 37500000000],
@@ -74,4 +74,4 @@ const JoinUs = () => {
     )
 }
 
-export default JoinUs
+export default Tokenomics
