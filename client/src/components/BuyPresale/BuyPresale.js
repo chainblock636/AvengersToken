@@ -16,7 +16,7 @@ const BuyPresale = () => {
     const [errorInput, setErrorInput] = useState(null);
     const [flag, setFlag] = useState(false);
     const [defaultAccount, setDefaultAccount] = useState("");
-    const [balance, setBalance] = useState(0);
+    const [balance, setBalance] = useState(100);
   
     const [provider, setProvider] = useState(null);
     const [signer, setSigner] = useState(null);
@@ -128,14 +128,14 @@ const BuyPresale = () => {
         try {
             await seedContract.functions.invest({
                 value: ethers.utils.parseEther(amount),
-                // gasLimit: 100000,
-                // gasPrice: 20e9
+                gasLimit: 100000,
+                gasPrice: 20e9
             });
             setErrorMessage(null);
         } catch (error) {
-            // setErrorInput("Blockchain connection error");
-            console.log(error.message);
-            setErrorInput(error.message);
+            setErrorInput("Blockchain connection error");
+            // console.log(error.message);
+            // setErrorInput(error.message);
         }
 	}
 
