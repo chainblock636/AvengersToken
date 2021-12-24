@@ -83,10 +83,14 @@ const Wallet = () => {
     }
 
     const getTokenBal = async () =>{
-        console.log(tokenContract);
-        let balance = await tokenContract.balanceOf(defaultAccount);
-        balance = ethers.utils.formatUnits(balance, 18);
-        setBalance(balance);
+        try {
+            let balance = await tokenContract.balanceOf(defaultAccount);
+            balance = ethers.utils.formatUnits(balance, 18);
+            setBalance(balance);
+            setErrorMessage(null);
+        } catch (error) {
+            setErrorMessage(error.message);
+        }
     }
 
     window.ethereum.on('accountsChanged', function (accounts) {
