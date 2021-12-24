@@ -35,7 +35,7 @@ const HowToBuy = () => {
 						<div class="col-lg-4 col-md-6">
 							<div class="s-h-play">
 								<img src="assets/images/h-play/ic2.png" alt="" />
-								<h4>Hodl for Growth</h4>
+								<h4>Invite others</h4>
 							</div>
 						</div>
 					</div>
