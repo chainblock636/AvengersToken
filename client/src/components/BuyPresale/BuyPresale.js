@@ -36,7 +36,6 @@ const BuyPresale = () => {
                         method: "eth_requestAccounts"
                     });
                     let address = accounts[0];
-                    console.log("account changed........window.eth");
                     setDefaultAccount(address);
                     setErrorMessage(null);
                     setFlag(true);
@@ -95,12 +94,8 @@ const BuyPresale = () => {
     }
 
     const getTokenBal = async () =>{
-        console.log(tokenContract);
-        console.log("accont ", defaultAccount);
         let balance = await tokenContract.balanceOf(defaultAccount);
-        console.log("bal 1 ", balance);
         balance = ethers.utils.formatUnits(balance, 18);
-        console.log("Bal 2 ", balance);
         setBalance(balance);
     }
 
@@ -135,7 +130,6 @@ const BuyPresale = () => {
 
     if (window.ethereum) {
         window.ethereum.on('accountsChanged', function (accounts) {
-            console.log("account changed........ onchanged");
             let address = accounts[0];
             setDefaultAccount(address);
             connectWallet();
@@ -144,7 +138,6 @@ const BuyPresale = () => {
 
     useEffect(() => {
         connectWallet();
-        console.log("account changed........ use effect ");
     }, [balance, defaultAccount]);
 
     return (
