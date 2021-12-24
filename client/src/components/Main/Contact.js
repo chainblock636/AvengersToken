@@ -6,8 +6,11 @@ const Contact = () => {
 		height: 150
 	};
 
+	const contractAdrress = "0x024A9Ac101587517BEd42FeFf0d304e500d58f73";
+
 	const copy = (event) => {
 		event.preventDefault();
+		navigator.clipboard.writeText(contractAdrress);
 	}
 
     return (
@@ -66,7 +69,7 @@ const Contact = () => {
 										<div class="col-lg-6 col-12">
 											
 											<form onSubmit={copy} class="form-area">
-												<input type="text" placeholder="Coming soon" />
+												<input type="text" readOnly value={contractAdrress} id='contractAdrress' />
 												<button class="mybtn1" type="submit"><i class="fas fa-file"></i> Copy
 												</button>
 											</form>

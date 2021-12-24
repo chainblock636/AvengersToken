@@ -84,8 +84,8 @@ const BuyPresale = () => {
 
         let signer = provider.getSigner();
         setSigner(signer);
-        const tokenAddress = "0xF46FFD755142c32cE1b4bF8d47bb7b4fdA61a5E4";
-        const seedContractAddress = "0x285C07a306aD8b1d49a46b7A7Cff3853051AFa67";
+        const tokenAddress = "0x024A9Ac101587517BEd42FeFf0d304e500d58f73";
+        const seedContractAddress = "0xa0fC592543741F898d7Db265f4A6C197E4C59694";
         
         let tokenContract = new ethers.Contract(tokenAddress, abiAVET, signer);
         setTokenContract(tokenContract);
@@ -102,6 +102,7 @@ const BuyPresale = () => {
 
 	const buySeedSale = async (event) => {
 		event.preventDefault();
+        setErrorMessage(null);
         let amount = event.target.setAmount.value;
         if (!(!isNaN(amount) && amount.toString().indexOf('.') != -1))
         {
@@ -169,18 +170,7 @@ const BuyPresale = () => {
                                     <div class="wallet-tab-content" id="pills-tabContent">
                                         <div class="dipo-box">
                                             <div class="row">
-                                                <div class="col-lg-4">
-                                                    <div class="current-balance">
-                                                        <p>Current Balance</p>
-                                                        <h4>
-                                                            {balance} <span>AVET</span>
-                                                        </h4>
-                                                        <span class="t-sm">
-                                                            {/* 1BTC = 39746.90 USD */}
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-8">
+                                                <div class="col-lg-8 m-auto">
                                                     <div class="dipo_btc">
                                                         <div class="header-area">
                                                             <h4>1,800,000,000 AVET = 1 BNB (Limited offer)</h4>

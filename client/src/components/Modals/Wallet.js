@@ -76,7 +76,7 @@ const Wallet = () => {
 
         let signer = provider.getSigner();
         setSigner(signer);
-        const tokenAddress = "0xF46FFD755142c32cE1b4bF8d47bb7b4fdA61a5E4";
+        const tokenAddress = "0x024A9Ac101587517BEd42FeFf0d304e500d58f73";
         
         let tokenContract = new ethers.Contract(tokenAddress, abiAVET, signer);
         setTokenContract(tokenContract);
