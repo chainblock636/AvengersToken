@@ -36,6 +36,7 @@ const BuyPresale = () => {
                         method: "eth_requestAccounts"
                     });
                     let address = accounts[0];
+                    console.log("account changed........window.eth");
                     setDefaultAccount(address);
                     setErrorMessage(null);
                     setFlag(true);
@@ -109,7 +110,6 @@ const BuyPresale = () => {
         if (!(!isNaN(amount) && amount.toString().indexOf('.') != -1))
         {
             setErrorMessage("Enter a valid amount");
-            console.log("Enter a valid amount");
             return false
         }
         if (amount > max){
@@ -134,11 +134,13 @@ const BuyPresale = () => {
 	}
 
     window.ethereum.on('accountsChanged', function (accounts) {
+        console.log("account changed........ onchanged");
         connectWallet();
     })
 
     useEffect(() => {
         connectWallet();
+        console.log("account changed........ use effect ");
     }, [balance, defaultAccount]);
 
     return (
