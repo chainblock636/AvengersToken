@@ -3,7 +3,10 @@ import { ethers } from "ethers";
 import abiAVET from "./../../abiAVET.json";
 import abiSeedContract from "./../../abiSeedContract.json";
 
-const BuyPresale = () => {      
+const BuyPresale = () => {   
+    const min = 0.02;
+    const max = 0.5;
+       
     const [errorMessage, setErrorMessage] = useState(null);
     const [flag, setFlag] = useState(false);
     const [defaultAccount, setDefaultAccount] = useState("");
@@ -86,19 +89,35 @@ const BuyPresale = () => {
     }
 
     const getTokenBal = async () =>{
-        console.log(tokenContract);
-        console.log("accont ", defaultAccount);
-        let balance = await tokenContract.balanceOf(defaultAccount);
-        console.log("bal 1 ", balance);
-        balance = ethers.utils.formatUnits(balance, 18);
-        console.log("Bal 2 ", balance);
-        setBalance(balance);
+        // console.log(tokenContract);
+        // console.log("accont ", defaultAccount);
+        // let balance = await tokenContract.balanceOf(defaultAccount);
+        // console.log("bal 1 ", balance);
+        // balance = ethers.utils.formatUnits(balance, 18);
+        // console.log("Bal 2 ", balance);
+        // setBalance(balance);
     }
 
 	const buySeedSale = async (event) => {
 		event.preventDefault();
-        connectWallet();
         let amount = event.target.setAmount.value;
+        if (!(!isNaN(amount) && amount.toString().indexOf('.') != -1))
+        {
+            setErrorMessage("Enter a valid amount");
+            console.log("Enter a valid amount");
+            return false
+        }
+        if (amount > max){
+            setErrorMessage("You cannot invest more than ", max, "BNB");
+            console.log("You cannot invest more than ", max, "BNB");
+            return false
+        };
+        if (amount < min) {
+            setErrorMessage("minimum investment is ", min, "BNB");
+            console.log("minimum investment is ", min, "BNB");
+            return false
+        };
+        connectWallet();
         console.log(seedContract);
         console.log(amount);
         await seedContract.functions.invest({
