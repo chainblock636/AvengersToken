@@ -86,7 +86,7 @@ const BuyPresale = () => {
         let signer = provider.getSigner();
         setSigner(signer);
         const tokenAddress = "0x024A9Ac101587517BEd42FeFf0d304e500d58f73";
-        const seedContractAddress = "0xa0fC592543741F898d7Db265f4A6C197E4C59694";
+        const seedContractAddress = "0x4fc8ED67AA8C26b3983c5aB0AD61b9Beef19eB80";
         
         let tokenContract = new ethers.Contract(tokenAddress, abiAVET, signer);
         setTokenContract(tokenContract);
