@@ -109,7 +109,7 @@ const BuyPresale = () => {
 
 	const buySeedSale = async (event) => {
 		event.preventDefault();
-        setErrorMessage(null);
+        setErrorInput(null);
         let amount = event.target.setAmount.value;
         if (!(!isNaN(amount) && amount.toString().indexOf('.') != -1))
         {
