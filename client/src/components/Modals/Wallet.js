@@ -99,7 +99,7 @@ const Wallet = () => {
 
     useEffect(() => {
         connectWallet();
-    }, []);
+    }, [balance, defaultAccount]);
 
     return (
         <div>

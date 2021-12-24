@@ -139,7 +139,7 @@ const BuyPresale = () => {
 
     useEffect(() => {
         connectWallet();
-    }, []);
+    }, [balance, defaultAccount]);
 
     return (
         <div>
