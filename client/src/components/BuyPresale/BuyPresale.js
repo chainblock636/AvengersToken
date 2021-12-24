@@ -32,7 +32,7 @@ const BuyPresale = () => {
                 // });
                 // setErrorMessage(null);
                 try {
-                        let accounts = await window.ethereum.request({
+                    let accounts = await window.ethereum.request({
                         method: "eth_requestAccounts"
                     });
                     let address = accounts[0];
@@ -135,6 +135,8 @@ const BuyPresale = () => {
 
     window.ethereum.on('accountsChanged', function (accounts) {
         console.log("account changed........ onchanged");
+        let address = accounts[0];
+        setDefaultAccount(address);
         connectWallet();
     })
 
