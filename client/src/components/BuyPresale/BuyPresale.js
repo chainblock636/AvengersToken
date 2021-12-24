@@ -89,13 +89,13 @@ const BuyPresale = () => {
     }
 
     const getTokenBal = async () =>{
-        // console.log(tokenContract);
-        // console.log("accont ", defaultAccount);
-        // let balance = await tokenContract.balanceOf(defaultAccount);
-        // console.log("bal 1 ", balance);
-        // balance = ethers.utils.formatUnits(balance, 18);
-        // console.log("Bal 2 ", balance);
-        // setBalance(balance);
+        console.log(tokenContract);
+        console.log("accont ", defaultAccount);
+        let balance = await tokenContract.balanceOf(defaultAccount);
+        console.log("bal 1 ", balance);
+        balance = ethers.utils.formatUnits(balance, 18);
+        console.log("Bal 2 ", balance);
+        setBalance(balance);
     }
 
 	const buySeedSale = async (event) => {
