@@ -109,7 +109,7 @@ const BuyPresale = () => {
         let amount = event.target.setAmount.value;
         if (!(!isNaN(amount) && amount.toString().indexOf('.') != -1))
         {
-            setErrorMessage("Enter a valid amount");
+            setErrorMessage("Enter a valid amount - Min: 0.02 BNB, Max: 0.4 BNB");
             return false
         }
         if (amount > max){
