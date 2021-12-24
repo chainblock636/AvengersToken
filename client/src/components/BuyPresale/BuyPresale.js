@@ -134,6 +134,7 @@ const BuyPresale = () => {
             setErrorMessage(null);
         } catch (error) {
             // setErrorInput("Blockchain connection error");
+            console.log(error.message);
             setErrorInput(error.message);
         }
 	}
