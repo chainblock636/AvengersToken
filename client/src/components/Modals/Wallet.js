@@ -93,9 +93,13 @@ const Wallet = () => {
         }
     }
 
-    window.ethereum.on('accountsChanged', function (accounts) {
-        connectWallet();
-    })
+    if (window.ethereum) {
+        window.ethereum.on('accountsChanged', function (accounts) {
+            let address = accounts[0];
+            setDefaultAccount(address);
+            connectWallet();
+        })
+    }
 
     useEffect(() => {
         connectWallet();
