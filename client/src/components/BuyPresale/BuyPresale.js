@@ -44,7 +44,7 @@ const BuyPresale = () => {
                     getTokenBal();
                 } catch (error) {
                     setFlag(false);
-                    setErrorMessage("Ensure you are on Binance Smart Chain Network");
+                    setErrorMessage("Blockchain connection error");
                 }
             // } catch (error) {
             //     // This error code indicates that the chain has not been added to MetaMask
@@ -133,7 +133,7 @@ const BuyPresale = () => {
             });
             setErrorMessage(null);
         } catch (error) {
-            setErrorInput("Ensure you are on Binance Smart Chain Network");
+            setErrorInput("Blockchain connection error");
         }
 	}
 

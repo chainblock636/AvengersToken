@@ -36,7 +36,7 @@ const Wallet = () => {
                     getTokenBal();
                 } catch (error) {
                     setFlag(false);
-                    setErrorMessage("Ensure you are on Binance Smart Chain Network");
+                    setErrorMessage("Blockchain connection error");
                 }
             // } catch (error) {
             //     // This error code indicates that the chain has not been added to MetaMask
