@@ -38,10 +38,10 @@ const About = () => {
 										About
 									</h2>
 									<h6 class="text">
-									Avengers token, $AVET is a community-based development, sustainability-driven tokenized network. 
+									Avengers Token (AVET) is a community-based development fan token, with a sustainability-driven tokenized network. 
 									It user- friendliness is specially design for all generation 
 									to grow and build on an already established metric system which 
-									automatically transform crypto like never before through our community fanbased.
+									automatically transform crypto like never before through our community fanbase.
 									</h6>
 								</div>
 							</div>
