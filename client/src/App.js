@@ -8,17 +8,11 @@ import Home from "./Home";
 import GameProfile from "./GameProfile";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Wallet from './components/Modals/Wallet';
+import { useParams } from "react-router";
+
 
 const App = () => {
-  // const [modal, setModal] = useState(false);
-  // React.useEffect(() => {
-  //   if (window.ethereum) {
-  //     console.log(window.ethereum);
-  //   } else {
-  //     // alert('Current network "undefined", Use ethereum enabled browser.');
-  //     setModal(true);
-  //   }
-  // }, []);
+  let { id } = useParams();
 
   return (
     <div>
@@ -27,6 +21,7 @@ const App = () => {
         <Preloader />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/:id" element={<Home />} />
           <Route exact path="/staking" element={<GameProfile />} />
         </Routes>
         <Footer />
