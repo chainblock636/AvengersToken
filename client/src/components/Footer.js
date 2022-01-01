@@ -1,6 +1,11 @@
 import React from 'react'
+import { animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
+    const scrollToTop = () => {
+      scroll.scrollToTop();
+    };
+
     return (
         <div>
 			<footer class="footer" id="footer">
@@ -9,7 +14,7 @@ const Footer = () => {
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="flogo">
-								<a href="#"><img src="assets/images/footer-logo.png" alt="" /></a>
+								<img onClick={scrollToTop} src="assets/images/footer-logo.png" alt="" />
 							</div>
 							<div class="social-links">
 								<ul>

@@ -1,7 +1,12 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const header = () => {
+    const scrollToTop = () => {
+      scroll.scrollToTop();
+    };
+    
     return (
       <div>
         <header class="header">
@@ -81,7 +86,7 @@ const header = () => {
                 <div class="col-lg-12">
                   <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="navbar-brand" href="#home">
-                      <img src="assets/images/logo.png" alt="" />
+                      <img onClick={scrollToTop} src="assets/images/logo.png" alt="" />
                     </a>
                     <button
                       class="navbar-toggler"
@@ -100,11 +105,17 @@ const header = () => {
                     >
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                          <a class="nav-link" href="#home">
-                            {/* <NavLink to="/"> */}
+                          <Link
+                            activeClass="active"
+                            className="nav-link"
+                            to="home"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                          >
                             Home
-                            {/* </NavLink> */}
-                          </a>
+                          </Link>
                         </li>
                         {/* <li class="nav-item">
                           <a class="nav-link" href="#">
@@ -114,25 +125,57 @@ const header = () => {
                           </a>
                         </li> */}
                         <li class="nav-item">
-                          <a class="nav-link" href="#about">
+                          <Link
+                            activeClass="active"
+                            className="nav-link"
+                            to="about"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                          >
                             About
-                          </a>
+                          </Link>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#roadmap">
+                          <Link
+                            activeClass="active"
+                            className="nav-link"
+                            to="roadmap"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                          >
                             Road Map
-                          </a>
+                          </Link>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#tokenomics">
+                          <Link
+                            activeClass="active"
+                            className="nav-link"
+                            to="tokenomics"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                          >
                             Tokenomics
-                          </a>
+                          </Link>
                         </li>
 
                         <li class="nav-item">
-                          <a class="nav-link" href="#community">
-                          Community
-                          </a>
+                          <Link
+                            activeClass="active"
+                            className="nav-link"
+                            to="community"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                          >
+                            Community
+                          </Link>
                         </li>
                       </ul>
                       <a
